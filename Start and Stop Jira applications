@@ -1,0 +1,39 @@
+#Linux
+#When Jira is installed as Services
+$ sudo /etc/init.d/jira start
+$ sudo /etc/init.d/jira stop
+
+#When Jira is NOT installed as Services
+If you didn't install Jira as a service you'll need to start and stop Jira manually.
+
+To start Jira run <installation-directory>\bin\start-jira.sh
+To stop Jira run <installation-directory>\bin\stop-jira.sh
+
+
+We recommend running Jira with a dedicated user account:
+
+$ su -u <user>
+$ ./start-jira.sh
+Where <user> is the name of your dedicated user.
+
+If you're using Ubuntu the command is a little different:
+
+$ sudo su <user>
+$ ./start-jira.sh
+
+#Windows
+#Installed as services
+If you installed Jira as a service, you can Start Jira Server and Stop Jira Server from the Windows Start menu. 
+
+You can't start or stop Jira manually using the start-jira.bat and stop-jira.bat file.
+
+#NOT Installed as services
+
+If you didn't install Jira as a service you'll need to start and stop Jira manually.
+
+To start Jira run <installation-directory>\bin\start-jira.bat
+To stop Jira run <installation-directory>\bin\stop-jira.bat
+We recommend running Jira with a dedicated user account. To do this, use use the runas command to execute start-jira.bat.
+
+> runas /env /user:<DOMAIN>\<jira> start-jira.bat
+Where <DOMAIN> is your Windows domain or computer name and <jira> is the name of your dedicated user.
