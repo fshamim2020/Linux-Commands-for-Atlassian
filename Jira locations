@@ -13,6 +13,8 @@ uid: fshamim , pwd: Apka189@
 
 #Current Working Directory	
 /opt/atlassian/jira/bin
+#Set JVM_Min & JVM_Max memory
+/opt/atlassian/jira/bin# nano setenv.sh
 
 
 #Location of JIRA
