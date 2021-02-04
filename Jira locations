@@ -1,0 +1,8 @@
+#Jira Installation Dir
+/opt/atlassian/jira/bin
+ls --> Will show all.sh files
+
+#Jira Home Dir
+
+/var/atlassian/application-data/JIRA (on Linux)
+ls --> will show backup. import,export,log and attachment files
