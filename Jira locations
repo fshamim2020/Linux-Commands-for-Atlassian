@@ -6,3 +6,23 @@ ls --> Will show all.sh files
 
 /var/atlassian/application-data/JIRA (on Linux)
 ls --> will show backup. import,export,log and attachment files
+
+# Installed Jira Server via Ubuntu
+http://192.168.175.128:8080/
+uid: fshamim , pwd: Apka189@
+
+#Current Working Directory	
+/opt/atlassian/jira/bin
+
+
+#Location of JIRA
+Location of JIRA Local Home	/var/atlassian/application-data/jira
+Location of JIRA Shared Home	/var/atlassian/application-data/jira
+Location of entityengine.xml	file:/opt/atlassian/jira/atlassian-jira/WEB-INF/classes/entityengine.xml
+Location of atlassian-jira.log	/var/atlassian/application-data/jira/log/atlassian-jira.log
+Location of indexes	/var/atlassian/application-data/jira/caches/indexes
+Location of attachments	/var/atlassian/application-data/jira/data/attachments
+Location of backups	/var/atlassian/application-data/jira/export
+
+# Application Server Container	Apache Tomcat/8.5.6
+# Database type	postgres72
