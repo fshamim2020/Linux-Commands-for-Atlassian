@@ -28,3 +28,11 @@ Location of backups	/var/atlassian/application-data/jira/export
 
 # Application Server Container	Apache Tomcat/8.5.6
 # Database type	postgres72
+
+
+#JIRA application home directory
+C:\Program Files\Atlassian\Application Data\JIRA (on Windows) or
+/var/atlassian/application-data/jira (on Linux)
+
+#JIRA application installation directory : All files under Bin are installation directory
+
