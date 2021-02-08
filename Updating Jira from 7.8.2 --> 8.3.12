@@ -1,0 +1,16 @@
+Installa the updated version installer and chomod it 
+Take backup of the current jira , it was stored at Data exported to: /var/atlassian/application-data/jira/export/feb8export.zip
+Move it to /atlassian1/jira/backup by mv command : mv feb8export.zip /atlassian1/jira/backup
+Create a copy of current jira home folder : 
+cp -R var var1
+cp atlassian atlassian1
+Changing dbconfig file here: /atlassian1/var1/atlassian/application-data/jira#  --> Update URL with //localhost:5432/JIRA1<
+ShutDown Jira and give new installation directory  : /opt/atlassian1/jira/bin
+
+Install  Ugraaded jira version : ./atlassian-jira-software-8.13.3-x64.bin  ---/atlassian-jira-software-8.13.3-x64.bin.86974.dir/
+Select Option 3 and update grade exisiting Jira  -- /opt/atlassian/jira
+#Shows where Jira is installed
+ps -ef | grep -i jira
+Upgrade process will automatically backup Jira installation and will delete previosu jira inslattation directory
+Once everydone done . Upgrade message comes successfully
+
