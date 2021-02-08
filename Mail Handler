@@ -1,0 +1,9 @@
+#Setting Up Outging Mail handler in Jira Server
+#SMTP Host
+Protocol: SMTP
+SMTP: 587
+
+Protocol: Secure SMTP
+SMTP: 465
+Secure SMPTP protocol Works for sending email to Gmail
+Provide OAuth Password always 
