@@ -9,8 +9,20 @@ ShutDown Jira and give new installation directory  : /opt/atlassian1/jira/bin
 
 Install  Ugraaded jira version : ./atlassian-jira-software-8.13.3-x64.bin  ---/atlassian-jira-software-8.13.3-x64.bin.86974.dir/
 Select Option 3 and update grade exisiting Jira  -- /opt/atlassian/jira
+#Point Jira to your existing Jira home directory.
+
+
 #Shows where Jira is installed
 ps -ef | grep -i jira
 Upgrade process will automatically backup Jira installation and will delete previosu jira inslattation directory
 Once everydone done . Upgrade message comes successfully
 
+
+#Setting Jira home directory
+Use one of the following approaches:
+
+#Atlassian recommend that you do it by setting the JIRA_HOME environment variable. For more info on how to do this, see Setting Jira home directory.
+
+Enter the following command at a shell/console prompt before running Jira.
+export JIRA_HOME=/path/to/jira/home
+Add the above command to the /bin/start-jira.sh script.
